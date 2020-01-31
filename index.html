@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="quiz-wrap"></form>
+    <div id="quiz"></div>
+    <button id="start">Start</button>
+
+    <div id="results">Results</div>
+    <script>
+    var currentQuestionindex =0;
+    var time=questions.length x 2;
+    var timerId;
+
+timerId=setInterval(clockTick,30);
+
+
+clearInterval(timerId)
+
+    var totalSeconds=0;
+    var secondsElapsed=0;
+    var status="start";
+    var interval;
+
+
+function startTimer() {
+  setTime();
+
+  interval = setInterval(function() {
+    secondsElapsed++;
+    renderTime();
+  }, 1000);
+var questions = [
+  {
+    question : "What is Kanye's newest album?",
+    choices : [
+      "KanYAY",
+      "Kanye loves Kanye",
+      "Bicken Back,Bein Bool",
+      "Jesus is King",
+    ],
+    answers : 4 
+  },
+  {
+    question : "Who is the assistant to the regional manager?",
+    choices : [
+      "Jim",
+      "Dwight",
+      "Kevin",
+      "Creed"
+    ],
+    answers : 1
+  }
+];
+    
+var quiz = {
+
+    var quizTime = document.getElementById("quiz-time");
+
+    for (var index in questions) {
+      var number = parseInt(index) + 1;
+      var quiz = document.createElement("div"); 
+      
+
+      
+      var question = document.createElement("h1");
+      question.innerHTML = number + ") " + questions[index]['questions'];
+    
+
+      for (var choices in questions[index]['choices']) {
+        
+    
+    
+        var option = document.createElement("input");
+        option.type = "radio";
+        option.needed = true;
+        option.classList.add("option"); 
+ 
+        
+        var choices = document.createTextNode(questions[index]['choices']);
+        label.appendChild(otext);
+      }
+
+  
+      submitButton.onclick=function(){
+    submitButton.onclick=startQuiz;
+
+    showResults('questions';'choices';'answers');
+    showResults.onclick
+  },
+
+    event.preventDefault();
+    
+
+
+    // Get the score
+    var score = 0;
+    for (var index in questions) {
+      if (selected[index].value == questions[index]['answers']) {
+        score++;
+      }
+    }
+
+    
+    var total = selected.length;
+    var percent = score / total ;
+
+};
+}}
+    
+    
+    </script>
+</body>
+</html>
